@@ -1,0 +1,8 @@
+#!/bin/sh
+rm -f /overlay/etc/config/*
+mount -o remount /
+cp -f /home/tcfg/wancfg/* /etc/config/
+/etc/init.d/network restart
+/home/init/init.1
+rm /home/init/init.0
+exit 0

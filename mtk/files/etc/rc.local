@@ -1,0 +1,32 @@
+# Put your custom commands here that should be executed once
+# the system init finished. By default this file does nothing.
+
+echo root:123456 | chpasswd
+# 减少TCP重试，当网络不好时能够更快检测到
+echo 5 > /proc/sys/net/ipv4/tcp_retries2
+
+hwclock -s
+if [ $? -ne 0 ]; then
+	date 1980.01.01-00:00:00
+	hwclock -w
+fi
+
+tcpsvd -E 0 21 ftpd -w /&
+
+if [ -e /home/upgrade.tar.bz2 ]; then
+	date >> /home/upgrade.log
+	md5sum /home/upgrade.tar.bz2 >> /home/upgrade.log
+	tar -xf /home/upgrade.tar.bz2 -C / >> /home/upgrade.log 2>&1
+	echo Upgrade Ret=$? >> /home/upgrade.log 2>&1
+	rm -rf /home/upgrade.tar.bz2
+fi
+
+chmod -R 777 /home/*
+
+if [ -e /home/init/init.0 ]; then
+	/home/init/init.0
+else
+	/home/init/init.1
+fi
+
+exit 0

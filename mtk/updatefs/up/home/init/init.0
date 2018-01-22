@@ -1,0 +1,8 @@
+#!/bin/sh
+/home/init/init.1
+rm -fr /home/init/init.0
+echo sleep 60 start
+sleep 60
+echo sleep 60 over
+reboot
+exit 0

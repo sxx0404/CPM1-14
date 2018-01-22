@@ -1,0 +1,8 @@
+config system
+	option hostname 'OpenWrt'
+	option zonename 'Asia/Shanghai'
+	option timezone 'CST-8'
+
+config timeserver 'ntp'
+	option enable_server '1'
+

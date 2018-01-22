@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="bn" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="all">
+				<Option output="bn" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="5" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="clean">
+				<Option output="bn" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option type="5" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="rebuilt">
+				<Option output="bn" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option type="5" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="../include/cam.h" />
+		<Unit filename="../include/common.h" />
+		<Unit filename="../include/gpio.h" />
+		<Unit filename="../include/log.h" />
+		<Unit filename="BusinessProtocol.cpp" />
+		<Unit filename="BusinessProtocol.h" />
+		<Unit filename="DES.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DES.h" />
+		<Unit filename="Dapp.h" />
+		<Unit filename="FileSend.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FileSend.h" />
+		<Unit filename="LanMiddle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="LanMiddle.h" />
+		<Unit filename="Makefile" />
+		<Unit filename="ManageSecurity.cpp" />
+		<Unit filename="ManageSecurity.h" />
+		<Unit filename="ManageTransmit.cpp" />
+		<Unit filename="ManageTransmit.h" />
+		<Unit filename="NormalTool.cpp" />
+		<Unit filename="NormalTool.h" />
+		<Unit filename="ProtocolDefine.h" />
+		<Unit filename="TCPCommApp.cpp" />
+		<Unit filename="TCPCommApp.h" />
+		<Unit filename="User_Definition.h" />
+		<Unit filename="aes.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="aes.h" />
+		<Unit filename="cfgFile.cpp" />
+		<Unit filename="cfgFile.h" />
+		<Unit filename="cls_socket.cpp" />
+		<Unit filename="cls_socket.h" />
+		<Unit filename="frsdb/frsdb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="frsdb/frsdb.h" />
+		<Unit filename="iniFile.cpp" />
+		<Unit filename="iniFile.h" />
+		<Unit filename="lc/lc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lc/lc.h" />
+		<Unit filename="lc/ln.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lc/ln.h" />
+		<Unit filename="lc/mcumod.h" />
+		<Unit filename="lc/rf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lc/rf.h" />
+		<Unit filename="list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="list.h" />
+		<Unit filename="main_linuxapp.cpp" />
+		<Unit filename="main_linuxapp.h" />
+		<Unit filename="md5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="md5.h" />
+		<Unit filename="mgt/mgt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mgt/mgt.h" />
+		<Unit filename="nm/nm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="nm/nm.h" />
+		<Unit filename="sd/sdmgt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="sd/sdmgt.h" />
+		<Unit filename="stdafx.h" />
+		<Unit filename="tcp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tcp.h" />
+		<Unit filename="typedef.h" />
+		<Unit filename="types.h" />
+		<Unit filename="up/up.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="up/up.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<lib_finder disable_auto="1" />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,10 @@
+---- +2 Matches (9 in 4 files) ----
+Lc.c (bn\lc):							McuInfo.TaskNexT = BooTime()+2;
+Lc.c (bn\lc):						McuInfo.TaskNexT = BooTime()+2;
+Ln.c (bn\lc):		Buf[7]	= Buf[9]+2;
+Ln.c (bn\lc):		return Buf[1]+2;
+Ln.c (bn\lc):		Len		+= TLVEncode(TAG_M_secureData, tRecd[1]+2, tRecd, 0, Buf+Len);
+Ln.c (bn\lc):	Buf[7]	= Buf[9]+2;
+Ln.c (bn\lc):	return Buf[1]+2;
+Mgt.c (bn\mgt):	Len2 = TLVEncode(TAG_L_fileRecord3, tBuf1[1]+2, tBuf1, 0, tBuf2);
+Nm.c (bn\nm):	ptr = Data+Data[0]+2;				// 之前为SCA和TPU的第一个字节，现在指在TPDU中的OA
