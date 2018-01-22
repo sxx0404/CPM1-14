@@ -40,8 +40,8 @@
  *  // 奇数:V2.1, 偶数:V2.2
  *  // V2.5, Big Endien //2.6, 13-04-03	// 2.7, 13-04-17 // 2.9, 13-05-10 // 2.13 13-08-01
  */
-#define SOFT_MAJOR_VERSION  (10)   // 主版本号
-#define SOFT_MINOR_VERSION  (0)   // 次版本号,
+#define SOFT_MAJOR_VERSION  (11)   // 主版本号
+#define SOFT_MINOR_VERSION  (3)   // 次版本号,
 
 /*
  *  支持协议版本号, 决定软件版本是奇数或偶数, 决定是否具有"门常开报警"

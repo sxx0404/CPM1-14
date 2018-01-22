@@ -1518,12 +1518,17 @@ int BusinessDecode(uchar *data, int len)
 				if (g_BusinessDataDiagnose) {
 					echo_printf(".\r\n");
 				}
-				if (LcGetOnline(D_code) == 0) {
+				int Ret = LcGetOnline(D_code);
+				if (Ret == 0) {
+					// мя╩З
 					if (g_BusinessDataDiagnose) {
 						echo_printf("[DEBUG] Server << RCMD_RemoteControl - Response, Sequence=%ld. state:%d, BUSINESS_STATE_ERROR_FORWARD_LOCKNOTONLINE.\r\n", seq, BUSINESS_STATE_ERROR_FORWARD_LOCKNOTONLINE);
 					}
 
 					BusinessPackage(RCMD_RemoteControl+0x80, BUSINESS_STATE_ERROR_FORWARD_LOCKNOTONLINE, seq, NULL, 0, NULL, 0, NULL, SOURCE_TYPE_ZKQ);
+					break;
+				} else if (Ret == -1) {
+					BusinessPackage(RCMD_RemoteControl+0x80, BUSINESS_STATE_ERROR_UNKNOWN_DEVICE, seq, NULL, 0, NULL, 0, NULL, SOURCE_TYPE_ZKQ);
 					break;
 				}
 

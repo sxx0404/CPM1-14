@@ -25,7 +25,7 @@
 #define DEF_RF_SGNL_INTVL				150
 #define LC_BUSINESS_PACK_HEAD_LENGTH_V2	10
 #define LC_BUSINESS_PACK_HEAD_LENGTH_V3	5
-#define LC_STAT_INTVL					180
+#define LC_STAT_INTVL					86400		// 1��
 #define LC_STAT_MAX_RETRY				10
 #define LC_FWD_SEND_TIMEO				30
 #define LC_FWD_TOO_OLD					600		// 10分钟之前的就不再重试了
